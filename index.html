@@ -11,8 +11,12 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
       <style>
           body, html {
+              background: transparent;
+              height: 100%;
+              width: 100%;
               font-family: 'Open Sans', sans-serif;
               background-color: #FFFFFF;
+              overflow: hidden;
           }
           a {
               text-decoration: none;
@@ -22,10 +26,31 @@
               text-decoration: none;
               color: #42b0eb;
           }
+          
+          html {
+              border: 1px solid #333;
+          }
+          
+          .navbar-header {
+              color: #000000;
+              line-height: 18px !important;
+              padding-top: 0px;
+              position: absolute;
+              float: center !important;
+              left: 45%;
+              font-weight: 400;
+          }
+          
+          .content {
+              text-align: center;
+          }
       </style>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="-webkit-app-region: drag">
+            <ul class="nav navbar-nav pull-right" style="-webkit-app-region: no-drag">
+                <li class="closebutton"><a href="#" draggable="false"><i class="fa fa-times fa-3"></i></a></li>
+            </ul>
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand">Select your Theme</a>
@@ -51,5 +76,14 @@
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        
+        <script>
+            var gui = require('nw.gui');
+            var win = gui.Window.get();
+
+            $(".closebutton").click(function() {
+                win.close();
+            });
+        </script>
     </body>
 </html>
