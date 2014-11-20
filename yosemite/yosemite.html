@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Demo App - (Yosemite)</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme/css/theme.css" rel="stylesheet" media="screen">
+
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="-webkit-app-region: drag">
+          <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li class="close-button" style="-webkit-app-region: no-drag" onClick="quit();"></li>
+                  <li class="minimize-button" style="-webkit-app-region: no-drag" onClick="minimize();"></li>
+                  <li class="fullscreen-button fullscreen-expand" style="-webkit-app-region: no-drag" onClick="fullscreen();"></li>
+              </ul>
+          </div><!--/.nav-collapse -->
+      </nav>
+
+    <div class="container-fluid container">
+
+      <div class="content">
+        <h1>Yosemite node-webkit Shell!</h1>
+        <p class="lead">You can use this theme to make your app look like a native Yosemite Application!</p>
+      </div>
+
+    </div><!-- /.container -->
+
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <script>
+          var gui = require('nw.gui');
+          var win = gui.Window.get();
+
+          function quit() {
+              win.close();
+          }
+          
+          function minimize() {
+              win.minimize();
+          }
+          
+          function fullscreen() {
+              win.toggleFullscreen();
+          }
+          
+          // Listen to the minimize event
+          win.on('minimize', function() {
+              console.log('Window is minimized');
+          });
+          
+          // Toggle between Fullscreen icons
+          
+          $( ".fullscreen-button" ).click(function() {
+              var $this = $(".fullscreen-button");              
+              if ($this.hasClass("fullscreen-expand")) {
+                  $this.removeClass("fullscreen-expand").addClass("fullscreen-compress");
+                  return;
+              }
+              // End IF statement
+              
+              if ($this.hasClass("fullscreen-compress")) {
+                  $this.removeClass("fullscreen-compress").addClass("fullscreen-expand");
+                  return;
+              }
+              // End IF statement
+              
+          });
+          // End of .click
+          
+      </script>
+    </body>
+</html>

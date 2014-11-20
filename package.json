@@ -1,0 +1,14 @@
+{
+  "name": "Demo Application",
+  "main": "index.html",
+  "homepage": "",
+  "window": {
+    "title": "Demo Application",
+    "toolbar": false,
+    "frame": false,
+    "transparent": true,
+    "width": 1366,
+    "height": 768,
+    "position": "center"
+  }
+}

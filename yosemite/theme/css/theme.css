@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body, html {
+    font-family: 'Open Sans', 'sans-serif';
+    background: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation (Headerbar) */
+
+.navbar-default {
+    background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+    border: 1px solid #a6a6a8;
+    border-right: 1px solid #a6a6a8;
+    border-left: 1px solid #a6a6a8;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.navbar {
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #6f6f6f;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #424242;
+}
+
+.navbar-default .navbar-nav > .open > a {
+  color: #6f6f6f;
+  background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+}
+
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #6f6f6f;
+  background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+}
+
+/* Dropdown Menus */
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+  color: #6f6f6f;
+  background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+}
+
+.dropdown-submenu:hover > a {
+  color: #6f6f6f;
+  background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+}
+
+/* Close/Minimize/Fullscreen */
+
+.close-button {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) 0 0;
+}
+
+.close-button:hover {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) 0 -14px;
+}
+
+.close-button:focus {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) 0 -28px;
+}
+
+.minimize-button {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -14px 0;
+}
+
+.minimize-button:hover {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -14px -14px;
+}
+
+.minimize-button:focus {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -14px -28px;
+}
+
+
+.fullscreen-button {
+
+}
+
+.fullscreen-expand {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -28px 0;
+}
+
+.fullscreen-expand:hover {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -28px -14px;
+}
+
+.fullscreen-expand:focus {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -28px -28px;
+}
+
+.fullscreen-compress {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -42px 0;
+}
+
+.fullscreen-compress:hover {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -42px -14px;
+}
+
+.fullscreen-compress:focus {
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/yosemite-trafficlight.png) -42px -42px;
+}
+
+/* Content */
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: -60px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-right: 1px solid #a6a6a8;
+    border-left: 1px solid #a6a6a8;
+    border-bottom: 1px solid #a6a6a8;
+    border-radius: 7px 7px 4px 4px;
+}
+
+.content {
+    padding-left: 30%;
+}
