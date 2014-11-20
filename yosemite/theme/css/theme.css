@@ -122,7 +122,7 @@ body, html {
 
 
 .fullscreen-button {
-
+    margin-right: 15px;
 }
 
 .fullscreen-expand {
@@ -173,11 +173,26 @@ body, html {
     background: url(../img/yosemite-trafficlight.png) -42px -42px;
 }
 
+.back-button {
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 14px;
+    width: 8px;
+    background: url(images/back-sml.png);
+}
+
+.forward-button {
+    margin-top: 5px;
+    margin-left: 15px;
+    max-width: 74px;
+    height: 14px;
+    width: 8px;
+    background: url(images/forward-sml.png);
+}
+
 .btn-default {
     margin-top: 6px;
-    margin-right: 10px;
     height: 24px;
-    width: 52px;
     background-color:#ffffff;
     box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.35);
     border-radius: 4px;
@@ -188,9 +203,15 @@ body, html {
     box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.25);
 }
 
+.btn-group {
+    margin-top: -10px;
+    margin-right: 0px;
+}
+
 .cog-button {
     margin-top: 6px;
     margin-left: 25px;
+    margin-right: 25px;
     padding-bottom: 10px;
     height: 12px;
     width: 12px;
@@ -242,4 +263,8 @@ ul.dropdown-menu {
 
 .content {
     text-align: center;
+}
+
+.push-settings {
+    margin-right: 10px;
 }
