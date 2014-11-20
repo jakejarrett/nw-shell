@@ -10,7 +10,8 @@ body, html {
 /* Navigation (Headerbar) */
 
 .navbar-default {
-    background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,234,234,0.1)), color-stop(100%, rgba(213,213,213,0.1)));
+    background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(213,213,213,1) 100%);
     border: 1px solid #a6a6a8;
     border-right: 1px solid #a6a6a8;
     border-left: 1px solid #a6a6a8;
@@ -41,6 +42,20 @@ body, html {
 .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #6f6f6f;
   background: -webkit-linear-gradient(top, rgba(234,234,234,0.85) 0%, rgba(213,213,213,0.85) 100%);
+}
+
+/* Titlebar Title (Application Name) Could make this read Package.json for name */
+
+.program-title {
+    line-height: 18px !important;
+    padding-top: 10px;
+    position: absolute;
+    float: center !important;
+    left: 45%;
+}
+
+.program-name {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Dropdown Menus */
@@ -156,6 +171,56 @@ body, html {
     height: 12px;
     width: 12px;
     background: url(../img/yosemite-trafficlight.png) -42px -42px;
+}
+
+.btn-default {
+    margin-top: 6px;
+    margin-right: 10px;
+    height: 24px;
+    width: 52px;
+    background-color:#ffffff;
+    box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.35);
+    border-radius: 4px;
+}
+
+.btn-default:hover {
+    background-color: #e4e4e4;
+    box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.25);
+}
+
+.cog-button {
+    margin-top: 6px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    height: 12px;
+    width: 12px;
+    background: url(images/cog-12.png);
+}
+
+.arrow-down {
+    margin-top: -8px;
+    margin-left: 50px;
+    padding-bottom: 6px;
+    height: 6px;
+    width: 9px;
+    background: url(images/arrow-down-sml.png);
+}
+
+/* Drop Downs */
+
+ul.dropdown-menu {
+    background-color: rgba(253, 253, 254, 0.8);
+    box-shadow: 0px 8px 16px 0.00px rgba(131, 150, 166, 0.75);
+    border: rgba(253, 253, 254, 0.8);
+    border-radius: 9px !important;
+}
+
+.dropdown-menu>li>a {
+    color: #000000;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: rgba(21, 126, 251, 1)
 }
 
 /* Content */
