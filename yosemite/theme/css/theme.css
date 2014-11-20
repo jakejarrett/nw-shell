@@ -8,6 +8,7 @@ body, html {
     overflow: hidden;
 }
 
+
 /* Navigation (Headerbar) */
 
 .navbar-default {
@@ -261,32 +262,37 @@ ul.dropdown-menu {
 
 /* Content */
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-    margin-top: 40px;
-    margin-bottom: -40px !important;
-    height: 95.5%;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    border-right: 1px solid #a6a6a8;
-    border-left: 1px solid #a6a6a8;
-    border-bottom: 1px solid #a6a6a8;
-    border-radius: 0px 0px 4px 4px;
-    overflow: auto;
-}
-
 .content {
+    position: absolute;
     text-align: center;
     height: 100%;
     width: 100%;
+    z-index: 1;
+    outline-style: none;
 }
 
-html {
-    margin-bottom: -40px;
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 39px;
+    z-index: 1;
+    position: relative;
+    background-color: #FFFFFF;
+    left: 0px;
+    outline-style: none;
+
 }
 
 .push-settings {
     margin-right: 10px;
+}
+
+/* Border */
+
+html {
+    z-index: 100;
+    border: 1px solid #a6a6a8;
+    border-radius: 7px 7px 4px 4px;
 }
