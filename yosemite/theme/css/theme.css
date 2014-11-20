@@ -265,7 +265,8 @@ ul.dropdown-menu {
     margin: 0;
     padding: 0;
     margin-top: 40px;
-    height: 100%;
+    margin-bottom: -40px !important;
+    height: 95.5%;
     width: 100%;
     position: absolute;
     background-color: #FFFFFF;
@@ -278,6 +279,12 @@ ul.dropdown-menu {
 
 .content {
     text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    margin-bottom: -40px;
 }
 
 .push-settings {
