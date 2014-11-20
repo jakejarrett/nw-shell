@@ -174,20 +174,21 @@ body, html {
 }
 
 .back-button {
-    margin-top: 5px;
-    margin-left: 15px;
+    margin-top: -1px;
+    margin-left: 5px;
+    margin-right: 8px;
     height: 14px;
     width: 8px;
     background: url(images/back-sml.png);
 }
 
 .forward-button {
-    margin-top: 5px;
-    margin-left: 15px;
-    max-width: 74px;
+    margin-top: -1px;
+    margin-left: 5px;
+    margin-right: 8px;
     height: 14px;
     width: 8px;
-    background: url(images/forward-sml.png);
+    background: url(images/forward-disabled-sml.png);
 }
 
 .btn-default {
@@ -196,6 +197,18 @@ body, html {
     background-color:#ffffff;
     box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.35);
     border-radius: 4px;
+}
+
+.btn-disabled {
+    margin-top: 6px;
+    height: 24px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.35);
+    border-radius: 4px;
+}
+
+.btn {
+    border: #ffffff;
 }
 
 .btn-default:hover {
@@ -209,9 +222,9 @@ body, html {
 }
 
 .cog-button {
-    margin-top: 6px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 20px;
     margin-bottom: 5px;
     padding-bottom: 10px;
     height: 12px;
