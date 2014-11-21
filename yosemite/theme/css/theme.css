@@ -197,7 +197,7 @@ body, html {
     margin-top: 6px;
     height: 24px;
     background-color:#ffffff;
-    box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.35);
+    box-shadow: 0px 1.5px 0.25px 0.00px rgba(16, 16, 16, 0.2);
     border-radius: 4px;
 }
 
@@ -205,7 +205,7 @@ body, html {
     margin-top: 6px;
     height: 24px;
     background-color: #ffffff;
-    box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.35);
+    box-shadow: 0px 0.5px 0px 0.00px rgba(16, 16, 16, 0.35);
     border-radius: 4px;
 }
 
@@ -215,7 +215,7 @@ body, html {
 
 .btn-default:hover {
     background-color: #e4e4e4;
-    box-shadow: 0px 2px 1px 0.00px rgba(16, 16, 16, 0.25);
+    box-shadow: 0.5px 1px 0.5px 0.00px rgba(16, 16, 16, 0.35);
 }
 
 .btn-group {
@@ -282,7 +282,6 @@ ul.dropdown-menu {
     background-color: #FFFFFF;
     left: 0px;
     outline-style: none;
-
 }
 
 .push-settings {
