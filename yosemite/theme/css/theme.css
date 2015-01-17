@@ -13,8 +13,8 @@ body, html {
 /* Navigation (Headerbar) */
 
 .navbar-default {
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,234,234,0.8)), color-stop(100%, rgba(213,213,213,0.8)));
-    background: -webkit-linear-gradient(top, rgba(234,234,234,0.8) 0%, rgba(213,213,213,0.8) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,234,234,1)), color-stop(100%, rgba(213,213,213,1)));
+    background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(213,213,213,1) 100%);
     border: 1px solid #a6a6a8;
     border-right: 1px solid #a6a6a8;
     border-left: 1px solid #a6a6a8;

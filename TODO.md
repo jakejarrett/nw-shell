@@ -21,6 +21,7 @@ What needs to be implemented?
 * Progress Bars
 * Media Object
 * List Group
+* Make all of the OS Buttons (Close, min & Max/Fullscreen) have :hover element when you hover over any of them.
 
 #### Future Themes
 

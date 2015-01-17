@@ -81,4 +81,5 @@ $RECYCLE.BIN/
 *.exe
 *.dll
 *.dat
+nwjs*
 credits.html
