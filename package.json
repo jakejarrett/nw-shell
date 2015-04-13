@@ -1,7 +1,11 @@
 {
-  "name": "Demo Application",
-  "main": "index.html",
+  "name": "Demo-Application",
+  "main": "./index.html",
   "homepage": "",
+  "scripts":
+    {
+      "start": "nw"
+    },
   "window": {
     "title": "Demo Application",
     "toolbar": false,
@@ -10,5 +14,8 @@
     "width": 1366,
     "height": 768,
     "position": "center"
+  },
+  "dependencies": {
+    "nw": "latest"
   }
 }
