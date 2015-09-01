@@ -1,30 +1,308 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-body, html {
-    font-family: 'Open Sans', 'sans-serif';
-    background: transparent;
-    height: 100%;
-    width: 100%;
+/*
+// Base CSS
+*/
+body,
+html {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
+p {
+  margin: 0;
+}
+
+.col-md-2 {
+  padding-right: 0px;
+}
+
+.sidebar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  position: absolute;
+  padding-left: 15px;
+  height: 100%;
+  width: 150px;
+  maximum-width: 150px;
+  z-index: 10;
+  margin-right: -1px;
+}
+
+.btn {
+  pdding-left: 15px;
+}
+
+.scrollable {
+  overflow-x: auto;
+  margin-left: -16px;
+}
+/* Modal Modification */
+
+#left ul.nav {
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+#left ul.nav ul {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#left ul.nav ul {
+  padding-left: 0;
+  width: auto;
+}
+
+#left ul.nav ul.children {
+  padding-left: 12px;
+  width: auto;
+}
+
+#left ul.nav li a:hover {
+  text-decoration: none;
+}
+
+/*
+//
+// Theme: Yosemite
+// Author: Jake Jarrett
+// Website: https://github.com/jakejarrett/nw-shell
+// Using OpenSans (https://github.com/FontFaceKit/open-sans)
+//
+*/
+
+body,
+html {
+  font-family: 'Open Sans', 'sans-serif';
+  background: transparent;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Navigation (Headerbar) */
+
+.navbar-default {
+  background: -webkit-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(237, 237, 237, 1) 100%);
+  border: 1px solid #A1A1A1;
+  border-right: 1px solid #A1A1A1;
+  border-left: 1px solid #A1A1A1;
+  border-radius: 7px 7px 0px 0px;
+  padding-top: 0px;
+  cursor: default;
+}
+
+.navbar {
+  padding-right: 17px;
+  height: 45px !important;
+  min-height: 45px !important;
+  max-height: 45px !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #4c4c4c;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #424242;
+}
+/* Sidebar */
+
+.sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #d9d9d9;
+  border-radius: 0px 0px 4px 4px;
+  padding-left: 0px !important;
+  z-index: 20;
+}
+
+#left ul.nav li.parent a {
+  padding: 0px;
+  color: #000000;
+}
+
+#left ul.nav > li.parent > a {
+  padding-top: 14px;
+  padding-left: 12px;
+  margin-top: -1px;
+  margin-bottom: -2px !important;
+  border-bottom: solid 1px #ffffff;
+  text-transform: uppercase;
+  color: #000000;
+  background: #FFFFFF;
+  height: 45px;
+}
+
+#left ul.nav li.parent a:hover,
+#left ul.nav li.parent a:focus {
+  background: #0069d9;
+  color: #ffffff !important;
+  margin-left: -1px;
+  padding-left: 13px;
+}
+/* Titlebar */
+
+.titlebar {
+  line-height: 18px !important;
+  padding-top: 7px;
+  position: absolute;
+  float: center !important;
+  left: 45%;
+}
+
+.project {
+  margin-top: -5px;
+  font-size: 10px;
+  line-height: 20px;
+}
+/* Dropdown Menus */
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus {
+  color: #ffffff;
+}
+
+/* Fixes */
+
+.navbar-nav>li>a {
+  padding-top: 0px !important;
+}
+
+.navbar-right~.navbar-right {
+  margin-right: -15px;
+}
+
+/* Window Controls */
+
+.close-button {
+  margin: 5px;
+  padding: 5px 22px 5px 12px;
+  border: 1px solid transparent;
+  width: 34px;
+  height: 34px;
+}
+
+.close-button:hover {
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+}
+
+.close-button:focus {
+  background: -webkit-linear-gradient(top, rgba(215, 215, 215, 1) 0%, rgba(224, 224, 224, 1) 100%);
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
+}
+
+.btn-default {
+  z-index: 3;
+  margin-top: 7px;
+  margin-right: 0px;
+  padding: 10px 12px 10px 12px;
+  height: 34px;
+  background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(237, 237, 237, 1) 100%);
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
+}
+
+.btn-default:hover {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 100%);
+}
+
+.btn-default:focus {
+  background: -webkit-linear-gradient(top, rgba(215, 215, 215, 1) 0%, rgba(224, 224, 224, 1) 100%);
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
+}
+
+.cog-button {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  height: 12px;
+  width: 12px;
+  background: url(https://cdn.rawgit.com/jakejarrett/vanguard/master/app/resources/themes/yosemite/css/images/cog-12.png);
+}
+/* Drop Downs */
+
+ul.dropdown-menu {
+  background-color: rgba(253, 253, 254, 1);
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0px 8px 16px 0.00px rgba(131, 150, 166, 0.75);
+  border: rgba(253, 253, 254, 0.8);
+  border-radius: 9px !important;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.dropdown-menu>li>a {
+  color: #000000;
+  padding: 3px 20px;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  -webkit-box-sizing: border-box;
+  background-color: rgba(21, 126, 251, 1);
+  border-bottom: 1px solid #065687;
+  border-top: 1px solid #065687;
+  padding: 2px 20px;
+}
+/* Clock */
 /* Content */
 
 .container-fluid {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    border: 1px solid #a6a6a8;
-    border-radius: 7px 7px 4px 4px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 44px;
+  z-index: 1;
+  position: relative;
+  background-color: #E9E9E9;
+  left: 0px;
+  outline-style: none;
+  border-bottom: 1px solid #D2D2D2;
+  border-radius: 0px 0px 4px 4px;
 }
+/* Border */
 
-.content {
-    padding-top: 15%;
-    text-align: center;
+html {
+  z-index: 100;
+  border: 1px solid #a6a6a8;
+  border-radius: 7px 7px 4px 4px;
 }
+/* Timeline */
+/* Track ID */
+/* Volume Control & Track Controls */
+/* Scrollbar */
+/* Landing Page */
+/* Nav Fix */
 
-.push-settings {
-    margin-right: 10px;
+#headerbar {
+  -webkit-user-select: none;
+}
+/* Scrollable */
+
+.scrollable {
+  padding-top: 15px;
+}
+/* Dropdown Fix */
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  background: transparent;
 }

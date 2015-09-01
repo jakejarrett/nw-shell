@@ -5,73 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Demo App - (Yosemite)</title>
+    <title>Demo App - (Adwaita)</title>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="theme/css/theme.css" rel="stylesheet" media="screen">
 
   </head>
   <body>
-    <div class="container-fluid container" style="-webkit-app-region: drag">
+      <nav class="navbar navbar-default navbar-fixed-top" id="headerbar" role="navigation" style="-webkit-app-region: drag">
+        <!-- Nav Container -->
 
-      <div class="content">
-        <h1>Adwaita Current not supported yet!</h1>
-        <p class="lead">Sorry!</p>
+        <div draggable="false">
+
+          <!-- Centered Text in Titlebar -->
+          <div class="nav navbar-nav projectnav text-center">
+            <div class="titlebar">
+              <p class="title">Demo Adwaita Style</p>
+              <p class="project">Based on Bootstrap!</p>
+            </div>
+          </div>
+          <!-- Adwaita Window Controls -->
+          <ul class="nav navbar-nav navbar-right" style="-webkit-app-region: no-drag">
+            <li class="close-button" draggable="false" onClick="win.close();"><i class="fa fa-times"></i></li>
+          </ul>
+
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#preferences" class="dropdown-toggle" data-toggle="dropdown" style="-webkit-app-region: no-drag" draggable="false">
+                <div class="btn btn-default">
+                  <div class="cog-button"></div>
+                </div>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" draggable="false">Link</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" draggable="false">Link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </div><!-- End Nav Container -->
+      </nav>
+      <!-- End Navigation -->
+
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div>
+            <!-- Content. You can use bootstraps grid system to have sidebars similar to Gnome's HIG -->
+            <div class="span9">
+              Content
+            </div>
+          </div>
+          <!-- End Content -->
+
+        </div>
       </div>
-
-    </div><!-- /.container -->
+      <!-- End Container -->
 
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
       <script>
-          var gui = require('nw.gui');
-          var win = gui.Window.get();
 
-          function quit() {
-              win.close();
-          }
-          
-          function minimize() {
-              win.minimize();
-          }
-          
-          function fullscreen() {
-              win.toggleFullscreen();
-          }
-          
-          function back() {
-              window.history.back();
-          }
-          
-          function forward() {
-              window.history.forward();
-          }
-          
+      process.on('uncaughtException', function (err) {
+          window.console.error(err, err.stack);
+          alert(err);
+      });
+          var gui = require('nw.gui'),
+              win = gui.Window.get();
+
           // Listen to the minimize event
           win.on('minimize', function() {
               console.log('Window is minimized');
           });
-          
-          // Toggle between Fullscreen icons
-          
-          $( ".fullscreen-button" ).click(function() {
-              var $this = $(".fullscreen-button");              
-              if ($this.hasClass("fullscreen-expand")) {
-                  $this.removeClass("fullscreen-expand").addClass("fullscreen-compress");
-                  return;
-              }
-              // End IF statement
-              
-              if ($this.hasClass("fullscreen-compress")) {
-                  $this.removeClass("fullscreen-compress").addClass("fullscreen-expand");
-                  return;
-              }
-              // End IF statement
-              
+
+          win.on('hide', function() {
+             console.log('Window is hidden. This is where you would throw a callback in to enable show()');
+            //  Something like this.
+            //  win.on('focus', function() {
+            //      win.show();
+            //  });
           });
-          // End of .click
-          
       </script>
     </body>
 </html>
