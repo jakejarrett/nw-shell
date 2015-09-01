@@ -12,49 +12,57 @@
 
   </head>
   <body>
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="-webkit-app-region: drag">
-          <div id="navbar" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-                  <li class="close-button" style="-webkit-app-region: no-drag" onClick="win.close();"></li>
-                  <li class="minimize-button" style="-webkit-app-region: no-drag" onClick="win.minimize();"></li>
-                  <li class="fullscreen-button fullscreen-expand" style="-webkit-app-region: no-drag" onClick="win.toggleFullscreen();"></li>
-              </ul>
-              <ul class="nav navbar-nav" style="-webkit-app-region: no-drag">
-                  <div class="btn btn-default" onClick="window.history.back();">
-                      <div class="back-button"></div>
-                  </div>
-                  <div class="btn btn-disabled">
-                      <div class="forward-button"></div>
-                  </div>
-              </ul>
-              <ul class="program-title">
-                  <div class="program-name">Demo Yosemite Application in node-webkit</div>
-              </ul>
-              <ul class="nav navbar-nav pull-right btn btn-default push-settings" style="-webkit-app-region: no-drag">
-                  <div class="dropdown">
-                      <div class="row dropdown-toggle" data-toggle="dropdown">
-                          <div class="cog-button"></div>
-                      </div>
-                      <ul class="dropdown-menu pull-right" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                      </ul>
-                  </div>
-              </ul>
-          </div><!--/.nav-collapse -->
-      </nav>
+      <nav class="navbar navbar-default navbar-fixed-top" id="headerbar" role="navigation" style="-webkit-app-region: drag">
+            <!-- Collect the nav links, forms, and other content for toggling -->
 
-    <div class="container-fluid container">
+            <div class="collapse navbar-collapse" draggable="false" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav appbuttons close-project" style="-webkit-app-region: no-drag">
+                <li class="pull-left closebutton close-button" draggable="false" onClick="win.close();"></li>
+                <li class="minimize-button" onClick="win.minimize();"></li>
+                <li class="fullscreen-button fullscreen-expand" onClick="win.toggleFullscreen();"></li>
+              </ul>
+              <!-- Always showing App Control Buttons (Close/Max/Min) -->
 
-      <div class="content">
-        <h1>Yosemite node-webkit Shell!</h1>
-        <p class="lead">You can use this theme to make your app look like a native Yosemite Application!</p>
-      </div>
+              <div class="nav navbar-nav projectnav text-center">
+                <div class="titlebar">
+                  <p class="title">Demo Yosemite Style</p>
+                  <p class="project">Based on Bootstrap!</p>
+                </div>
+              </div>
+              <!-- Project Center (Project Title & Project Location) -->
 
-    </div><!-- /.container -->
+              <ul class="nav navbar-nav navbar-right projectnav" id="projectNav">
+                <li class="dropdown">
+                  <a href="#preferences" class="dropdown-toggle" data-toggle="dropdown" draggable="false"><div class="btn btn-default"><div class="cog-button"></div></div></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" draggable="false">Link</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="#" draggable="false">Link</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Right Project Navigation (BPM, Menu, Preferences & Fullscreen) -->
+            </div><!-- /.navbar-collapse -->
+          </nav>
+          <!-- End Navigation -->
+
+          <div class="container-fluid">
+            <div class="row-fluid">
+              <div>
+                <!-- Start Timeline / DAW Contents -->
+                <div class="span9">
+                  Content
+                </div>
+              </div>
+              <!-- End Timeline / DAW -->
+
+            </div>
+          </div>
+          <!-- End Project Page -->
 
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
