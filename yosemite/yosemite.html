@@ -13,56 +13,59 @@
   </head>
   <body>
       <nav class="navbar navbar-default navbar-fixed-top" id="headerbar" role="navigation" style="-webkit-app-region: drag">
-            <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Nav Container -->
 
-            <div class="collapse navbar-collapse" draggable="false" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav appbuttons close-project" style="-webkit-app-region: no-drag">
-                <li class="pull-left closebutton close-button" draggable="false" onClick="win.close();"></li>
-                <li class="minimize-button" onClick="win.minimize();"></li>
-                <li class="fullscreen-button fullscreen-expand" onClick="win.toggleFullscreen();"></li>
-              </ul>
-              <!-- Always showing App Control Buttons (Close/Max/Min) -->
+        <div draggable="false">
+          <ul class="nav navbar-nav appbuttons close-project" style="-webkit-app-region: no-drag">
+            <li class="pull-left closebutton close-button" draggable="false" onClick="win.close();"></li>
+            <li class="minimize-button" onClick="win.minimize();"></li>
+            <li class="fullscreen-button fullscreen-expand" onClick="win.toggleFullscreen();"></li>
+          </ul>
+          <!-- Always showing App Control Buttons (Close/Max/Min) -->
 
-              <div class="nav navbar-nav projectnav text-center">
-                <div class="titlebar">
-                  <p class="title">Demo Yosemite Style</p>
-                  <p class="project">Based on Bootstrap!</p>
-                </div>
-              </div>
-              <!-- Project Center (Project Title & Project Location) -->
-
-              <ul class="nav navbar-nav navbar-right projectnav" id="projectNav">
-                <li class="dropdown">
-                  <a href="#preferences" class="dropdown-toggle" data-toggle="dropdown" draggable="false"><div class="btn btn-default"><div class="cog-button"></div></div></a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#" draggable="false">Link</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#" draggable="false">Link</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- Right Project Navigation (BPM, Menu, Preferences & Fullscreen) -->
-            </div><!-- /.navbar-collapse -->
-          </nav>
-          <!-- End Navigation -->
-
-          <div class="container-fluid">
-            <div class="row-fluid">
-              <div>
-                <!-- Start Timeline / DAW Contents -->
-                <div class="span9">
-                  Content
-                </div>
-              </div>
-              <!-- End Timeline / DAW -->
-
+          <div class="nav navbar-nav projectnav text-center">
+            <div class="titlebar">
+              <p class="title">Demo Yosemite Style</p>
+              <p class="project">Based on Bootstrap!</p>
             </div>
           </div>
-          <!-- End Project Page -->
+          <!-- Centered Text in Titlebar -->
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#preferences" class="dropdown-toggle" data-toggle="dropdown" style="-webkit-app-region: no-drag" draggable="false">
+                <div class="btn btn-default">
+                  <div class="cog-button"></div>
+                </div>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" draggable="false">Link</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" draggable="false">Link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- End Nav Container -->
+      </nav>
+      <!-- End Navigation -->
+
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div>
+            <!-- Content. You can use bootstraps grid system to have sidebars similar to OS X's HIG -->
+            <div class="span9">
+              Content
+            </div>
+          </div>
+          <!-- End Content -->
+
+        </div>
+      </div>
+      <!-- End Container -->
 
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
