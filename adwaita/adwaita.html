@@ -81,7 +81,7 @@
       });
           var gui = require('nw.gui'),
               win = gui.Window.get();
-
+          win.showDevTools();
           // Listen to the minimize event
           win.on('minimize', function() {
               console.log('Window is minimized');
