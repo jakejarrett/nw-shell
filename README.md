@@ -3,6 +3,10 @@
 CSD Support for node webkit
 (Yosemite Toolbar/Titlebar, Gnome/Pantheon CSD)
 
+# Preview Themes
+* [Adwaita](http://codepen.io/jakejarrett/full/wKBGvV/)
+* [Yosemite](http://codepen.io/jakejarrett/full/bdPewZ/)
+
 # How to install / use
 ```
 npm install
